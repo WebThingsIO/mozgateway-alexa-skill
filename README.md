@@ -1,4 +1,4 @@
-# mozgateway-alexa-skill
+# MozGateway Alexa Skill
 Alexa Skill to interact with Mozilla Gateway
 
 To publish:
