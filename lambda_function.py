@@ -96,8 +96,8 @@ def call_gateway_session(intent, session):
         gw_command = action + " the " + thing
         payload = "{\"text\":\" " + gw_command + " \"}"
 
-        url = 'https://mountainview.mozilla-iot.org/commands'
-        headers = {'authorization':'Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImY5OTU4NzVkLTQ3MTItNDU3MS1hNjhkLWY3ZmZkMWIzMGRiOCJ9.eyJpYXQiOjE1MDc5MTEyNTF9.YDH9Bko21NwQUC2bWAFcUAgkKM6T4Vd4kqOlFMw3PLatyFJ1ZSlyresjOrMqcI-bmNFsYrfyMDDaX-5jVrrheg', 'content-Type': 'application/json', 'Accept': 'application/json'}
+        url = # Update here with the gateway URL
+        headers = {'authorization':'Bearer <Update here with the jwt token>', 'content-Type': 'application/json', 'Accept': 'application/json'}
         r = requests.post(url, headers=headers, data=payload)
         #print(r)
                     
